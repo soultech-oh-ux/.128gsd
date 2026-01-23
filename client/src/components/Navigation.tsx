@@ -39,7 +39,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="GOODSEED Logo" 
-              className="h-12 w-auto object-contain transition-transform group-hover:scale-105" 
+              className="h-24 w-auto object-contain transition-transform group-hover:scale-105" 
             />
         </Link>
 

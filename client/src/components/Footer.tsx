@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="GOODSEED" className="h-8 w-auto object-contain" />
+              <img src={logo} alt="GOODSEED" className="h-16 w-auto object-contain" />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               굿씨드 AI연구소는 인공지능 기술의 미래를 만들어갑니다.
