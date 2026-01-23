@@ -43,7 +43,7 @@ const PadletSection = () => {
             src="https://padlet.com/embed/kgoh9191/ai-mnvyvpebq4iq4rbq" 
             className="absolute inset-0 w-full h-full border-0"
             title="GoodSeed AI Padlet"
-            sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-presentation allow-top-navigation"
+            sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-presentation allow-top-navigation allow-popups-to-escape-sandbox allow-modals"
             loading="lazy"
           />
           
