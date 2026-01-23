@@ -20,7 +20,7 @@ const Navigation = () => {
   const navLinks = [
     { name: "About", href: "#about", label: "About" },
     { name: "Research", href: "#research", label: "Services" },
-    { name: "Community", href: "#community", label: "Community" },
+    { name: "Community", href: "https://open.kakao.com/o/g8X6BQZh", label: "Community", external: true },
     { name: "Team", href: "#contact", label: "Contact" },
     { name: "Cafe", href: "https://cafe.naver.com/goosd", label: "Official Cafe", external: true },
   ];
