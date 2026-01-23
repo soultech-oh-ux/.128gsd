@@ -49,12 +49,12 @@ const services = [
 
 export default function AiAnalysisSection() {
   return (
-    <section className="py-24 relative overflow-hidden bg-slate-50">
-      {/* Background decoration with Gold/Amber theme elements */}
+    <section className="py-24 relative overflow-hidden bg-background">
+      {/* Dark realistic background with subtle gradient */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-amber-50/50 to-transparent" />
-        <div className="absolute top-1/2 -right-24 w-96 h-96 bg-amber-100/30 rounded-full blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-yellow-100/30 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-amber-900/10 to-transparent" />
+        <div className="absolute top-1/2 -right-24 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-blue-600/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -64,10 +64,10 @@ export default function AiAnalysisSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center justify-center p-2 mb-6 bg-amber-100/50 backdrop-blur-sm rounded-full px-6 border border-amber-200/50 text-amber-900 font-semibold shadow-sm"
+            className="inline-flex items-center justify-center p-2 mb-6 bg-amber-500/10 backdrop-blur-md rounded-full px-6 border border-amber-500/20 text-amber-500 font-semibold shadow-sm"
           >
-            <Sparkles className="w-4 h-4 mr-2 text-amber-700" />
-            <span className="text-amber-800">미래를 여는 AI 기술</span>
+            <Sparkles className="w-4 h-4 mr-2 text-amber-500" />
+            <span className="text-amber-400">미래를 여는 AI 기술</span>
           </motion.div>
 
           <motion.h2 
@@ -75,7 +75,7 @@ export default function AiAnalysisSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl md:text-5xl font-display font-bold tracking-tight mb-6 text-slate-900"
+            className="text-3xl md:text-5xl font-display font-bold tracking-tight mb-6 text-white"
           >
             AI 지식공유
           </motion.h2>
@@ -85,7 +85,7 @@ export default function AiAnalysisSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-slate-600 mb-10 leading-relaxed font-medium max-w-2xl mx-auto"
+            className="text-lg text-slate-400 mb-10 leading-relaxed font-medium max-w-2xl mx-auto"
           >
             과학적 통계와 최신 AI 기술을 통해<br className="hidden md:block" /> 
             자기 이해부터 투자 분석까지, 새로운 통찰력을 제공합니다.

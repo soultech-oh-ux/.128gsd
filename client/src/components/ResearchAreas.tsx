@@ -50,16 +50,16 @@ const areas = [
 
 const ResearchAreas = () => {
   return (
-    <section id="research" className="py-24 bg-background">
+    <section id="research" className="py-24 bg-black/50">
       <div className="container px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-primary font-medium tracking-wider text-sm uppercase mb-2 block">
             Research & Service
           </span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-white">
             굿씨드의 주요 사업 분야
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-slate-400 text-lg">
             굿씨드 AI연구소는 다양한 산업 분야에 실질적인 도움이 되는 AI 기술을 연구하고 보급합니다.
           </p>
         </div>
@@ -73,25 +73,25 @@ const ResearchAreas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <Card className="h-full border-border/50 hover:border-primary/50 transition-all hover:shadow-lg group bg-card">
+              <Card className="h-full border-white/10 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 group bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex justify-between items-start mb-4">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                      <area.icon className="w-6 h-6" />
+                      <area.icon className="w-6 h-6 text-primary group-hover:text-white" />
                     </div>
-                    <Badge variant="secondary" className="font-normal text-xs">
+                    <Badge variant="secondary" className="font-normal text-xs bg-white/10 text-slate-300 hover:bg-white/20">
                       {area.category}
                     </Badge>
                   </div>
-                  <CardTitle className="font-display text-xl mb-2">{area.title}</CardTitle>
-                  <CardDescription className="line-clamp-2">
+                  <CardTitle className="font-display text-xl mb-2 text-white">{area.title}</CardTitle>
+                  <CardDescription className="line-clamp-2 text-slate-400">
                     {area.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {area.tags.map((tag, i) => (
-                      <span key={i} className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">
+                      <span key={i} className="text-xs bg-white/5 border border-white/10 text-slate-400 px-2 py-1 rounded-md">
                         #{tag}
                       </span>
                     ))}

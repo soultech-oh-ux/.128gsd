@@ -30,7 +30,7 @@ const Navigation = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
         scrolled
-          ? "bg-background/95 backdrop-blur-md border-border py-2 shadow-sm"
+          ? "bg-black/80 backdrop-blur-md border-white/10 py-2 shadow-sm"
           : "bg-transparent py-4"
       )}
     >
@@ -39,7 +39,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="GOODSEED Logo" 
-              className="h-24 w-auto object-contain transition-transform group-hover:scale-105" 
+              className="h-24 w-auto object-contain transition-transform group-hover:scale-105 brightness-0 invert" 
             />
         </Link>
 
@@ -51,7 +51,7 @@ const Navigation = () => {
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
-              className="text-base font-bold text-black hover:text-primary transition-colors"
+              className="text-base font-bold text-white hover:text-primary transition-colors"
             >
               {link.label}
             </a>
@@ -67,11 +67,11 @@ const Navigation = () => {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="bg-slate-900 border-white/10 text-white">
               <div className="flex flex-col gap-6 mt-10">
                 {navLinks.map((link) => (
                   <a
@@ -79,7 +79,7 @@ const Navigation = () => {
                     href={link.href}
                     target={link.external ? "_blank" : undefined}
                     rel={link.external ? "noopener noreferrer" : undefined}
-                    className="text-lg font-bold text-black hover:text-primary transition-colors"
+                    className="text-lg font-bold text-white hover:text-primary transition-colors"
                   >
                     {link.label}
                   </a>
