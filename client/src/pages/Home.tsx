@@ -4,6 +4,7 @@ import About from "@/components/About";
 import ResearchAreas from "@/components/ResearchAreas";
 import AiAnalysisSection from "@/components/AiAnalysisSection";
 import Contact from "@/components/Contact";
+import FooterVideo from "@/components/FooterVideo";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <ResearchAreas />
         <AiAnalysisSection />
         <Contact />
+        <FooterVideo />
       </main>
       <Footer />
     </div>
