@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} GOODSEED AI Research Lab. All rights reserved.
+          © 2024 GOODSEED AI Research Lab. All rights reserved.
         </div>
       </div>
     </footer>
