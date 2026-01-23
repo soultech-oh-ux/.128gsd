@@ -24,33 +24,33 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 border border-primary/20">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold mb-6 border border-primary/20">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              실생활에 도움이 되는 따뜻한 기술
+              Warm Technology for Everyday Life
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 leading-[1.15]">
-              굿씨드 AI연구소 <br />
-              <span className="text-primary">세상을 바꾸는 좋은 씨앗</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-black tracking-tight mb-6 leading-[1.15]">
+              GOODSEED AI Research Lab <br />
+              <span className="text-primary">Good Seeds Changing the World</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-              교육, 복지, 부동산, 그리고 AI 챗봇까지.<br/>
-              굿씨드는 누구나 쉽게 사용할 수 있는 인공지능 기술로<br className="hidden sm:block"/>
-              더 편리하고 풍요로운 세상을 만들어갑니다.
+            <p className="text-lg md:text-xl text-muted-foreground font-medium mb-8 leading-relaxed max-w-2xl">
+              From Education, Welfare, Real Estate to AI Chatbots.<br/>
+              GoodSeed creates a more convenient and prosperous world<br className="hidden sm:block"/>
+              with AI technology accessible to everyone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-full text-base h-12 px-8" asChild>
+              <Button size="lg" className="rounded-full text-base font-bold h-12 px-8" asChild>
                 <a href="https://docs.google.com/forms/d/1AHC7W1ow2BEEDV25H9yn8-E6uJhjusEIARiPDctsN0E/edit" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 w-4 h-4" />
-                  챗봇 및 프로그램 제작문의
+                  <MessageCircle className="mr-2 w-5 h-5" />
+                  Inquiry for Chatbot & Program Production
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full text-base h-12 px-8 bg-background/50 backdrop-blur-sm border-primary/20 hover:bg-background/80" asChild>
+              <Button size="lg" variant="outline" className="rounded-full text-base font-bold h-12 px-8 bg-background/50 backdrop-blur-sm border-primary/20 hover:bg-background/80" asChild>
                 <a href="https://padlet.com/kgoh9191/ai-tohcnjocsr8f5t6n" target="_blank" rel="noopener noreferrer">
-                  <BookOpen className="mr-2 w-4 h-4" />
-                  교육 프로그램 보기
+                  <BookOpen className="mr-2 w-5 h-5" />
+                  View Education Programs
                 </a>
               </Button>
             </div>
