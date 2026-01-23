@@ -56,8 +56,10 @@ const Navigation = () => {
               {link.label}
             </a>
           ))}
-          <Button size="sm" className="rounded-full px-6">
-            Get Started
+          <Button size="sm" className="rounded-full px-6 font-bold" asChild>
+            <a href="https://litt.ly/goodsd55" target="_blank" rel="noopener noreferrer">
+              연구소장 soultech-Oh
+            </a>
           </Button>
         </div>
 
@@ -82,7 +84,11 @@ const Navigation = () => {
                     {link.label}
                   </a>
                 ))}
-                <Button className="w-full">Get Started</Button>
+                <Button className="w-full font-bold" asChild>
+                  <a href="https://litt.ly/goodsd55" target="_blank" rel="noopener noreferrer">
+                    연구소장 soultech-Oh
+                  </a>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>
