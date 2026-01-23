@@ -49,18 +49,18 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">Email</h4>
-                  <p className="text-muted-foreground">contact@goodseed.ai</p>
+                  <p className="text-muted-foreground">kgoh9191@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 rounded-full bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+                  <MessageSquare className="w-5 h-5 text-yellow-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-1">Inquiry</h4>
+                  <h4 className="font-bold mb-1">KakaoTalk</h4>
                   <p className="text-muted-foreground">
-                    챗봇 제작 및 교육 문의 환영
+                    ID: soultech-oh
                   </p>
                 </div>
               </div>
