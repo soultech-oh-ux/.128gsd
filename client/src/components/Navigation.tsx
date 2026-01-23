@@ -34,8 +34,7 @@ const Navigation = () => {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/">
-          <a className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group">
             <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
               <Sprout className="w-6 h-6 text-primary" />
             </div>
@@ -47,7 +46,6 @@ const Navigation = () => {
                 AI RESEARCH LAB
               </span>
             </div>
-          </a>
         </Link>
 
         {/* Desktop Nav */}

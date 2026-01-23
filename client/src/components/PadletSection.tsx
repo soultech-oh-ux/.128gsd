@@ -40,10 +40,11 @@ const PadletSection = () => {
           className="relative w-full aspect-[16/9] md:aspect-[16/10] rounded-xl overflow-hidden shadow-2xl border border-border bg-muted"
         >
           <iframe 
-            src="https://padlet.com/embed/kgoh9191/ai-8fvz98xu171hivz6" 
+            src="https://padlet.com/kgoh9191/ai-8fvz98xu171hivz6" 
             className="absolute inset-0 w-full h-full border-0"
             title="GoodSeed AI Padlet"
-            allow="camera;microphone;geolocation"
+            sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-presentation"
+            loading="lazy"
           />
           
           {/* Decorative overlay only while loading - handled by browser mostly, but adds polish */}
