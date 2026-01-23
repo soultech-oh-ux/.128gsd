@@ -18,11 +18,11 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about", label: "연구소 소개" },
-    { name: "Research", href: "#research", label: "주요 사업" },
-    { name: "Community", href: "#community", label: "커뮤니티" },
-    { name: "Team", href: "#contact", label: "문의하기" },
-    { name: "Cafe", href: "https://cafe.naver.com/goosd", label: "공식 카페", external: true },
+    { name: "About", href: "#about", label: "About" },
+    { name: "Research", href: "#research", label: "Services" },
+    { name: "Community", href: "#community", label: "Community" },
+    { name: "Team", href: "#contact", label: "Contact" },
+    { name: "Cafe", href: "https://cafe.naver.com/goosd", label: "Official Cafe", external: true },
   ];
 
   return (
@@ -58,7 +58,7 @@ const Navigation = () => {
           ))}
           <Button size="sm" className="rounded-full px-6 font-bold" asChild>
             <a href="https://litt.ly/goodsd55" target="_blank" rel="noopener noreferrer">
-              연구소장 soultech-Oh
+              Director soultech-Oh
             </a>
           </Button>
         </div>
