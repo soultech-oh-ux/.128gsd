@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Fingerprint, Building2, TrendingUp, Sparkles } from "lucide-react";
+import { Fingerprint, Building2, TrendingUp, Sparkles, Cross, FileText, BookOpen } from "lucide-react";
 import { ServiceCard } from "@/components/ServiceCard";
 
 const services = [
@@ -8,20 +8,41 @@ const services = [
     description: "뇌과학, 해부학, 유전학에 의한 과학적 통계로 분석하는 자기이해보고서입니다. 당신의 고유한 잠재력을 발견하세요.",
     link: "https://padlet.com/kgoh9191/ibaq-a35pekdzzdjplgc4",
     icon: <Fingerprint className="w-8 h-8" />,
-    delay: 0.2
+    delay: 0.1
   },
   {
     title: "부동산 분석 AI",
     description: "빅데이터 기반의 부동산 시장 분석 및 예측 리포트를 제공합니다. 스마트한 투자를 위한 AI 파트너를 만나보세요.",
     link: "https://padlet.com/kgoh9191/ai-1s7bvfo7q735shhh",
     icon: <Building2 className="w-8 h-8" />,
-    delay: 0.4
+    delay: 0.2
   },
   {
     title: "경제, 주식 분석 AI",
     description: "글로벌 경제 동향과 주식 시장을 실시간으로 분석하여 인사이트를 제공합니다. 데이터 기반의 투자 전략을 세우세요.",
     link: "https://padlet.com/kgoh9191/ai-3ygrakl00l1bh7w3",
     icon: <TrendingUp className="w-8 h-8" />,
+    delay: 0.3
+  },
+  {
+    title: "복음과 AI디지털 목회",
+    description: "목회 현장에서 활용 가능한 AI 도구와 디지털 사역 자료를 공유합니다.",
+    link: "https://padlet.com/kgoh9191/ai-mnvyvpebq4iq4rbq",
+    icon: <Cross className="w-8 h-8" />,
+    delay: 0.4
+  },
+  {
+    title: "사회복지 행정서류",
+    description: "사회복지 행정 업무 효율화를 위한 각종 서식과 AI 활용법을 제공합니다.",
+    link: "https://padlet.com/kgoh9191/ai-8fvz98xu171hivz6",
+    icon: <FileText className="w-8 h-8" />,
+    delay: 0.5
+  },
+  {
+    title: "교육 프로그램",
+    description: "자기주도학습 및 AI 리터러시 교육을 위한 커리큘럼과 자료실입니다.",
+    link: "https://padlet.com/kgoh9191/ai-tohcnjocsr8f5t6n",
+    icon: <BookOpen className="w-8 h-8" />,
     delay: 0.6
   }
 ];

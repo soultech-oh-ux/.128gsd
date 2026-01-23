@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ResearchAreas from "@/components/ResearchAreas";
-import PadletSection from "@/components/PadletSection";
 import AiAnalysisSection from "@/components/AiAnalysisSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -16,7 +15,6 @@ const Home = () => {
         <About />
         <ResearchAreas />
         <AiAnalysisSection />
-        <PadletSection />
         <Contact />
       </main>
       <Footer />
