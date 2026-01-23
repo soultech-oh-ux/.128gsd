@@ -54,18 +54,18 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="w-5 h-5 text-yellow-600" />
+                <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold mb-1">KakaoTalk Open Chat</h4>
+                  <h4 className="font-bold mb-1">문의 접수하기</h4>
                   <a 
-                    href="https://open.kakao.com/o/g8X6BQZh" 
+                    href="https://docs.google.com/forms/d/1AHC7W1ow2BEEDV25H9yn8-E6uJhjusEIARiPDctsN0E/edit" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors hover:underline"
                   >
-                    오픈채팅 참여하기
+                    구글폼 작성하기
                   </a>
                 </div>
               </div>
@@ -113,11 +113,11 @@ const Contact = () => {
 
                 <Button 
                   type="button" 
-                  className="w-full text-base py-6 bg-yellow-400 hover:bg-yellow-500 text-black font-bold"
-                  onClick={() => window.open('https://open.kakao.com/o/g8X6BQZh', '_blank')}
+                  className="w-full text-base py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+                  onClick={() => window.open('https://docs.google.com/forms/d/1AHC7W1ow2BEEDV25H9yn8-E6uJhjusEIARiPDctsN0E/edit', '_blank')}
                 >
-                  <MessageSquare className="mr-2 w-5 h-5" />
-                  카카오톡 오픈채팅으로 문의하기
+                  <MessageCircle className="mr-2 w-5 h-5" />
+                  챗봇 및 프로그램 제작문의 (구글폼)
                 </Button>
               </form>
             </CardContent>

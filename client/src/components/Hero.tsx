@@ -41,13 +41,17 @@ const Hero = () => {
               더 편리하고 풍요로운 세상을 만들어갑니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-full text-base h-12 px-8">
-                <MessageCircle className="mr-2 w-4 h-4" />
-                챗봇 제작 문의
+              <Button size="lg" className="rounded-full text-base h-12 px-8" asChild>
+                <a href="https://docs.google.com/forms/d/1AHC7W1ow2BEEDV25H9yn8-E6uJhjusEIARiPDctsN0E/edit" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 w-4 h-4" />
+                  챗봇 및 프로그램 제작문의
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full text-base h-12 px-8 bg-background/50 backdrop-blur-sm border-primary/20 hover:bg-background/80">
-                <BookOpen className="mr-2 w-4 h-4" />
-                교육 프로그램 보기
+              <Button size="lg" variant="outline" className="rounded-full text-base h-12 px-8 bg-background/50 backdrop-blur-sm border-primary/20 hover:bg-background/80" asChild>
+                <a href="https://padlet.com/kgoh9191/ai-tohcnjocsr8f5t6n" target="_blank" rel="noopener noreferrer">
+                  <BookOpen className="mr-2 w-4 h-4" />
+                  교육 프로그램 보기
+                </a>
               </Button>
             </div>
           </motion.div>
