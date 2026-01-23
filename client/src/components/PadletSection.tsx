@@ -21,7 +21,7 @@ const PadletSection = () => {
           <div className="flex justify-center gap-4 mb-8">
             <Button variant="outline" asChild>
               <a 
-                href="https://padlet.com/kgoh9191/ai-8fvz98xu171hivz6" 
+                href="https://padlet.com/kgoh9191/ai-mnvyvpebq4iq4rbq" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -40,10 +40,10 @@ const PadletSection = () => {
           className="relative w-full aspect-[16/9] md:aspect-[16/10] rounded-xl overflow-hidden shadow-2xl border border-border bg-muted"
         >
           <iframe 
-            src="https://padlet.com/kgoh9191/ai-8fvz98xu171hivz6" 
+            src="https://padlet.com/embed/kgoh9191/ai-mnvyvpebq4iq4rbq" 
             className="absolute inset-0 w-full h-full border-0"
             title="GoodSeed AI Padlet"
-            sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-presentation"
+            sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-presentation allow-top-navigation"
             loading="lazy"
           />
           
