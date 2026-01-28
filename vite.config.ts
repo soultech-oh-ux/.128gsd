@@ -2,13 +2,22 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import { fileURLToPath } from "url";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const projectRoot = __dirname;
+const clientRoot = path.join(projectRoot, "client");
 
 export default defineConfig({
   plugins: [
     react(),
-    runtimeErrorOverlay(),
+    // Replit 전용 에러 오버레이 플러그인은 개발 환경에서만 사용
+    ...(process.env.NODE_ENV !== "production" && 
+        process.env.VERCEL === undefined
+      ? [runtimeErrorOverlay()]
+      : []),
     tailwindcss(),
     metaImagesPlugin(),
     ...(process.env.NODE_ENV !== "production" &&
@@ -25,9 +34,9 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@": path.join(clientRoot, "src"),
+      "@shared": path.join(projectRoot, "shared"),
+      "@assets": path.join(projectRoot, "attached_assets"),
     },
   },
   css: {
@@ -35,10 +44,17 @@ export default defineConfig({
       plugins: [],
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),
+  root: clientRoot,
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.join(projectRoot, "dist", "public"),
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        entryFileNames: "assets/[name]-[hash].js",
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
+      },
+    },
   },
   server: {
     host: "0.0.0.0",
