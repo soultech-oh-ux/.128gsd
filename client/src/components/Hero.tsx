@@ -1,26 +1,21 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown, MessageCircle, BookOpen } from "lucide-react";
-import heroVideo from "@/assets/hero-video.mp4";
+import heroBg from "@/assets/hero-bg-future.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Video */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/60 z-10" /> {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent z-10" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
+          src={heroBg}
+          alt="Future City Background"
           className="w-full h-full object-cover"
-        >
-          <source src={heroVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
       </div>
 
       <div className="container relative z-20 px-4 md:px-6">
